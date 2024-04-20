@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(45, 45, 45);
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.calculator-content-display {
+  background-color: rgb(238, 238, 238);
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+.calculator-content-display input {
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: rgb(3, 0, 26);
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container .calculator-content {
+  background: rgba(15, 14, 14, 0.5);
+  padding: 1.5rem;
+  border-radius: 1em;
+  border: 1px solid rgb(238, 238, 238);
+}
+#container .calculator-content-main {
+  text-align: center;
+}
+#container .calculator-content-main-set {
+  margin: 0.5rem 0;
+}
+#container .calculator-content-main-set input {
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin: 0.3rem;
+  border-radius: 1em;
+  transition: 0.2s;
+}
+#container .calculator-content-main-set input:hover {
+  border: 1px solid rgb(255, 122, 122);
+  transform: translate(0, -5px);
+  box-shadow: 0 3px 0 rgb(255, 122, 122);
+}
+#container .calculator-content-main-set input:active {
+  background: rgba(255, 122, 122, 0.1);
+  color: rgb(255, 122, 122);
+}
+#container .calculator-content-main-set #showResult {
+  width: 13rem;
+  background-color: rgb(224, 12, 12);
+  color: rgb(238, 238, 238);
+  border: 1px solid rgba(255, 122, 122, 0.1);
+}
+#container .calculator-content-main-set-operators {
+  color: rgb(255, 122, 122);
+  background: rgb(35, 35, 35);
+}
+
+/*# sourceMappingURL=styles.css.map */
