@@ -1,0 +1,55 @@
+@use 'reset'
+@use 'variables'
+@import 'features'
+    
+#container
+    height: 100vh
+    @include configDisplay()
+
+    .calculator-content
+        background: variables.$calculatorBg
+        padding: 1.5rem
+
+        border-radius: 1em
+        @include configBorder(variables.$inputCalculatorBg)
+
+        &-main
+            text-align: center
+
+            &-set       
+                margin: .5rem 0
+
+                input
+                    font-size: 1.5rem
+                    cursor: pointer
+
+                    width: 3.75rem
+                    height: 3.75rem
+
+                    margin: .3rem 
+                    border-radius: 1em
+
+                    transition: .2s
+
+                    &:hover
+                        @include configBorder(variables.$operatorsColor)
+                        transform: translate(0, -5px)
+                        box-shadow: 0 3px 0 variables.$operatorsColor
+                    
+                    &:active
+                        background: variables.$operatorsColorFocus
+                        color: variables.$operatorsColor
+
+                #showResult
+                    width: 13rem
+                    background-color: variables.$showResultBtn
+
+                    color: variables.$inputCalculatorBg
+                    @include configBorder(variables.$operatorsColorFocus)
+
+                &-operators
+                    color: variables.$operatorsColor
+                    background: variables.$operatorsBg
+                    
+
+            
