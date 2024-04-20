@@ -1,0 +1,24 @@
+@use 'variables'
+
+@mixin configDisplay($display: flex, $justify: center, $align: center)
+    display: $display
+    justify-content: $justify
+    align-items: $align
+
+@mixin configBorder($color, $width: 1px, $type: solid)
+    border: $width $type $color
+
+.calculator-content-display
+    background-color: variables.$inputCalculatorBg
+    border-radius: .5rem
+    margin: 1.5rem 0
+
+    input
+        text-align: right
+        font-size: 1.5rem
+
+        padding: 10px
+        color: variables.$colorResult
+    
+
+
