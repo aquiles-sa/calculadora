@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <main id="container">
+      <section class="calculator-content">
+        <article class="calculator-content-display">
+          <input
+            type="text"
+            id="display"
+            disabled
+            placeholder="0"
+          />
+        </article>
+
+        <form class="calculator-content-main">
+          <div class="calculator-content-main-set">
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="AC"
+            />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="CE"
+            />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="."
+            />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="/"
+            />
+          </div>
+          <div class="calculator-content-main-set">
+            <input type="button" value="7" />
+            <input type="button" value="8" />
+            <input type="button" value="9" />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="*"
+            />
+          </div>
+          <div class="calculator-content-main-set">
+            <input type="button" value="4" />
+            <input type="button" value="5" />
+            <input type="button" value="6" />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="-"
+            />
+          </div>
+          <div class="calculator-content-main-set">
+            <input type="button" value="1" />
+            <input type="button" value="2" />
+            <input type="button" value="3" />
+            <input
+              type="button"
+              class="calculator-content-main-set-operators"
+              value="+"
+            />
+          </div>
+          <div class="calculator-content-main-set">
+            <input type="button" value="0" />
+            <input
+              type="button"
+              id="showResult"
+              class="calculator-content-main-set-operators"
+              value="="
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
